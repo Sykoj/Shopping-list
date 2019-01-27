@@ -1,0 +1,11 @@
+<form id="add-item" method="post" action="index.php">
+    <input class="input-text" list="items-datalist" value="[@name]" name="name" id="input-items-id" required/>
+    <input class="input-text" type="number" value="[@amount]" id="amount" name="amount" min="1" required/>
+    <input class="form-button" type="submit" name="add_item" id="submit" value="Add item"/>
+</form>
+<form id="clear" method="get" action="index.php">
+    <input class="form-button" type="submit" value="Clear"/>
+</form>
+
+<datalist id="items-datalist">
+</datalist>
